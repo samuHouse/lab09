@@ -19,8 +19,8 @@ public class Controller {
      * A method for setting a File as current file
      * @param filename is the name of the file to consider
      */
-    public void setCurrentFIle(String filename) {
-        this.current = new File(System.getProperty("user.home")+System.getProperty("file.separator")+filename);
+    public void setCurrentFIle(File newFile) {
+        this.current = newFile;
     }
 
 
