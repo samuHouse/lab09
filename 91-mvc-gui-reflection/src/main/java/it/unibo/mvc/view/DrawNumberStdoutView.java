@@ -24,6 +24,7 @@ public class DrawNumberStdoutView implements DrawNumberView {
     @Override
     public void result(DrawResult res) {
         LOG.println(res.getDescription());
+        this.controller.quit();
     }
     
 }
